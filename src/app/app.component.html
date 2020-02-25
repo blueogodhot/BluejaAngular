@@ -1,0 +1,33 @@
+Hello{{title | uppercase | lowercase }}
+
+<p>
+  {{ amount | currency }}
+</p>
+
+<p>
+  {{ today | date: 'yyyy-MM-dd'}}
+</p>
+
+<pre>{{ user | json }}</pre>
+
+<div *ngIf="isLoading">
+  Loading...
+</div>
+
+<input [(ngModel)] = "email">
+{{ email }}
+
+<!-- <input #email
+(keyup.enter) = "search(email.value)"> -->
+
+<button (click) = "onClickOkButton($event)">
+  OK
+</button>
+
+<p [style.color] = "isActive ? 'green' : 'red' ">
+  I LOVE DOG
+</p>
+
+<img
+  [src] = "imageUrl"
+  [class.active] = "isActive">
